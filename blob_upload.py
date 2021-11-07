@@ -9,7 +9,6 @@ files_to_upload = [
 ]
 
 connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
-env = os.getenv('SECRET')
 
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
