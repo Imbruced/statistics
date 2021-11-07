@@ -22,18 +22,3 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: git submodule update --init --recursive
       - run: python main.py
-
-  deploy:
-    needs: script-test
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      - run: git submodule update --init --recursive
-      - run: pip install azure-storage-blob
-      - name: Upload to the storage
-        env:
-           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-        run: python blob_upload.py
