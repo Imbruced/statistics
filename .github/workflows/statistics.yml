@@ -2,7 +2,7 @@ name: Statistics script validation
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
       - '*'
