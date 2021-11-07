@@ -4,8 +4,8 @@ from azure.storage.blob import BlobServiceClient
 
 files_to_upload = [
     "functions/__init__.py",
-  #  "functions/stats.py",
-    "main.py"
+    "functions/stats.py",
+   # "main.py"
 ]
 
 connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
