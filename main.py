@@ -2,8 +2,6 @@ import logging
 
 from functions import calculate_average, variance, median
 
-calculate_average(4.0, 3.0)
-
 if __name__ == "__main__":
     assert calculate_average(1.0, 2.0) == 1.5
     assert calculate_average(1.0, 3.0) == 2.0
