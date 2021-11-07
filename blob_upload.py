@@ -4,7 +4,7 @@ from azure.storage.blob import BlobServiceClient
 
 files_to_upload = [
     "functions/__init__.py",
-    "functions/stats.py",
+  #  "functions/stats.py",
     "main.py"
 ]
 
