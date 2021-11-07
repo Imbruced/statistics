@@ -1,4 +1,4 @@
-name: Statistics script validation
+name: Deploy on Azure
 on:
   push:
     branches:
